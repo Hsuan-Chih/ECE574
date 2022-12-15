@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : hierarchy
+Design : alu
+Version: L-2016.03-SP2
+Date   : Mon Apr 25 17:45:02 2022
+****************************************
+
+alu
+    AND2X1                    saed90nm_typ
+    AND3X1                    saed90nm_typ
+    AND4X1                    saed90nm_typ
+    AO22X1                    saed90nm_typ
+    AOI222X1                  saed90nm_typ
+    INVX0                     saed90nm_typ
+    MUX21X1                   saed90nm_typ
+    NAND2X0                   saed90nm_typ
+    NAND3X0                   saed90nm_typ
+    NAND4X0                   saed90nm_typ
+    NOR2X0                    saed90nm_typ
+    OA21X1                    saed90nm_typ
+    OA22X1                    saed90nm_typ
+    OAI21X1                   saed90nm_typ
+    OR2X1                     saed90nm_typ
+    OR4X1                     saed90nm_typ
+    XOR2X1                    saed90nm_typ
+    alu_DW01_addsub_0
+        FADDX1                saed90nm_typ
+        XOR2X1                saed90nm_typ
+1

@@ -1,0 +1,136 @@
+a. Find the total area used by the alu. (report_area command)
+Ans: 1457.043392
+
+b. How many different types of cells (gates) were utilized: (report_hierarchy command)
+Ans: 19 types of cells (gates) listed in report_hierarchy file (see the following appendix).
+
+c. Number of cells (gates). This will require using the report_area command as well as looking at the cell library databook. It can be found in the tool usage module. 
+Search for the cell "NAND2X1" and record the area (pg 34). Divide the total area reported by design_vision by dr this number to get the gate equivalent count.
+Ans: Number of cells (gates) = 146; however, dividing the total area by the area of the cell "NAND2X1" = 264 (1457.043392/5.5296 = 263.498877315)
+
+d. The synthesis tool will most likely introduce a hierarchical block to your design because it recognized something in your design. What is the block and what does it do? What style of implementation was chosen for this element? Hint: see report_hierarchy output
+Ans: From the report_hierarchy file, it is clear that the top-level block is "alu". In this block, it contains many different types of gates listed in report_hierarchy file, and also one smaller block "alu_DW01_addsub_0" which contains a full adder and 2-input XOR gate. The smaller block only performs the operation and the bigger block "alu" does the rest.
+Because I use the "unique" case in my design, the style of implementation is the parallel logic; therefore, this produces parallel decoding which will be smaller and faster.
+
+e. What was the maximum delay path through the alu and what were the beginning and endpoints for the max delay path? (report_timing command)
+Ans: the maximum delay path = 2.58 (see the following appendix), the beginning = opcode[0], endpoint = alu_zero.
+
+[appendix]
+ 
+****************************************
+Report : area
+Design : alu
+Version: L-2016.03-SP2
+Date   : Mon Apr 25 17:44:26 2022
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    saed90nm_typ (File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/synopsys/models/saed90nm_typ_pg.db)
+
+Number of ports:                           60
+Number of nets:                           199
+Number of cells:                          146
+Number of combinational cells:            144
+Number of sequential cells:                 1
+Number of macros/black boxes:               0
+Number of buf/inv:                         26
+Number of references:                      18
+
+Combinational area:               1388.523002
+Buf/Inv area:                      143.780005
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:              68.520390
+
+Total cell area:                  1388.523002
+Total area:                       1457.043392
+1
+
+ 
+****************************************
+Report : hierarchy
+Design : alu
+Version: L-2016.03-SP2
+Date   : Mon Apr 25 17:45:02 2022
+****************************************
+
+alu
+    AND2X1                    saed90nm_typ
+    AND3X1                    saed90nm_typ
+    AND4X1                    saed90nm_typ
+    AO22X1                    saed90nm_typ
+    AOI222X1                  saed90nm_typ
+    INVX0                     saed90nm_typ
+    MUX21X1                   saed90nm_typ
+    NAND2X0                   saed90nm_typ
+    NAND3X0                   saed90nm_typ
+    NAND4X0                   saed90nm_typ
+    NOR2X0                    saed90nm_typ
+    OA21X1                    saed90nm_typ
+    OA22X1                    saed90nm_typ
+    OAI21X1                   saed90nm_typ
+    OR2X1                     saed90nm_typ
+    OR4X1                     saed90nm_typ
+    XOR2X1                    saed90nm_typ
+    alu_DW01_addsub_0
+        FADDX1                saed90nm_typ
+        XOR2X1                saed90nm_typ
+1
+
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : alu
+Version: L-2016.03-SP2
+Date   : Mon Apr 25 17:45:22 2022
+****************************************
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ
+Wire Load Model Mode: enclosed
+
+  Startpoint: opcode[0] (input port)
+  Endpoint: alu_zero (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  alu                8000                  saed90nm_typ
+  alu_DW01_addsub_0  8000                  saed90nm_typ
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  opcode[0] (in)                           0.00       0.00 f
+  U167/QN (INVX0)                          0.22       0.22 r
+  U244/QN (NAND2X0)                        0.19       0.41 f
+  U234/Q (OA21X1)                          0.25       0.66 f
+  U233/Q (OR2X1)                           0.09       0.75 f
+  U231/QN (NAND3X0)                        0.05       0.79 r
+  r30/B[0] (alu_DW01_addsub_0)             0.00       0.79 r
+  r30/U9/Q (XOR2X1)                        0.15       0.95 r
+  r30/U1_0/CO (FADDX1)                     0.15       1.09 r
+  r30/U1_1/CO (FADDX1)                     0.13       1.23 r
+  r30/U1_2/CO (FADDX1)                     0.13       1.36 r
+  r30/U1_3/CO (FADDX1)                     0.13       1.49 r
+  r30/U1_4/CO (FADDX1)                     0.13       1.62 r
+  r30/U1_5/CO (FADDX1)                     0.13       1.75 r
+  r30/U1_6/CO (FADDX1)                     0.13       1.89 r
+  r30/U1_7/S (FADDX1)                      0.20       2.08 f
+  r30/SUM[7] (alu_DW01_addsub_0)           0.00       2.08 f
+  U214/QN (AOI222X1)                       0.23       2.32 r
+  U216/QN (NAND2X0)                        0.08       2.40 f
+  U222/Q (OR4X1)                           0.14       2.53 f
+  U220/QN (NOR2X0)                         0.04       2.58 r
+  alu_zero (out)                           0.00       2.58 r
+  data arrival time                                   2.58
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

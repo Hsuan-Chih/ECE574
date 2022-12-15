@@ -1,0 +1,156 @@
+# Model Technology ModelSim SE-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 19:04:48 on Jun 01,2022
+# vlog cache_ctrl.sv enums.sv property.sv tb.sv 
+# -- Compiling module cache_ctrl
+# -- Compiling package enums_sv_unit
+# -- Compiling package property_sv_unit
+# -- Compiling package tb_sv_unit
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 19:04:49 on Jun 01,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.tb 
+# Start time: 19:04:49 on Jun 01,2022
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# //  ModelSim SE-64 2021.2 Apr 14 2021 Linux 3.10.0-1160.59.1.el7.x86_64
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.tb_sv_unit(fast)
+# Loading work.tb(fast)
+# Loading work.cache_ctrl(fast)
+# ==========================================================
+# Scenario 1 Starts ... 
+# Trace: IDLE => CHECK_CACHE => HIT => READ_CACHE => IDLE
+# ==========================================================
+# [5] check_cahce = 1, read_memory = 0, read_cache = 0
+# Assertion: s_read_when_miss fail!
+# Assertion: s_read_mem fail!
+# Assertion: s_check fail!
+# [15] check_cahce = 1, read_memory = 0, read_cache = 0
+# Assertion: s_read_when_miss fail!
+# Assertion: s_read_mem fail!
+# Assertion: s_check fail!
+# [25] check_cahce = 1, read_memory = 0, read_cache = 0
+# Assertion: s_read_when_miss fail!
+# Assertion: s_read_mem fail!
+# Assertion: s_check fail!
+# [35] check_cahce = 0, read_memory = 0, read_cache = 0
+# Assertion: s_read_when_miss fail!
+# Assertion: s_read_mem fail!
+# [45] check_cahce = 0, read_memory = 0, read_cache = 1
+# Cover: p_check_impl pass!
+# Assertion: p_check_impl pass!
+# Cover: s_check pass!
+# Assertion: s_read_when_miss fail!
+# Assertion: s_read_mem fail!
+# Assertion: s_check fail!
+# Assertion: s_check pass!
+# ==========================================================
+# Scenario 1 Ends ... 
+# ==========================================================
+# [55] check_cahce = 0, read_memory = 0, read_cache = 0
+# Assertion: s_read_when_miss fail!
+# Assertion: s_read_mem fail!
+# Assertion: s_check fail!
+# ==========================================================
+# Scenario 2 Starts ... 
+# Trace: IDLE => CHECK_CACHE*2 => MISS => READ_MEM => IDLE
+# ==========================================================
+# [65] check_cahce = 1, read_memory = 0, read_cache = 0
+# Assertion: s_read_when_miss fail!
+# Assertion: s_read_mem fail!
+# Assertion: s_check fail!
+# [75] check_cahce = 1, read_memory = 0, read_cache = 0
+# Assertion: s_read_when_miss fail!
+# Assertion: s_read_mem fail!
+# Assertion: s_check fail!
+# [85] check_cahce = 0, read_memory = 0, read_cache = 0
+# Assertion: s_read_when_miss fail!
+# Assertion: s_read_mem fail!
+# [95] check_cahce = 0, read_memory = 0, read_cache = 0
+# Assertion: s_read_when_miss fail!
+# Assertion: s_read_mem fail!
+# Assertion: s_check fail!
+# [105] check_cahce = 0, read_memory = 1, read_cache = 0
+# Cover: p_check_impl pass!
+# Cover: p_check_impl pass!
+# Assertion: p_check_impl pass!
+# Assertion: p_check_impl pass!
+# Cover: s_read_when_miss pass!
+# Assertion: s_read_when_miss pass!
+# Assertion: s_read_mem fail!
+# Assertion: s_check fail!
+# Assertion: s_check fail!
+# ==========================================================
+# Scenario 2 Ends ... 
+# ==========================================================
+# [115] check_cahce = 0, read_memory = 0, read_cache = 0
+# Assertion: s_read_when_miss fail!
+# Assertion: s_read_mem fail!
+# Assertion: s_check fail!
+# ==========================================================
+# Scenario 3 Starts ... 
+# Violate all assertions ...  
+# Trace: IDLE => CHECK_CACHE*4 => rst asserted => IDLE
+# ==========================================================
+# [125] check_cahce = 1, read_memory = 0, read_cache = 0
+# Assertion: s_read_when_miss fail!
+# Assertion: s_read_mem fail!
+# Assertion: s_check fail!
+# [135] check_cahce = 1, read_memory = 0, read_cache = 0
+# Assertion: s_read_when_miss fail!
+# Assertion: s_read_mem fail!
+# Assertion: s_check fail!
+# [145] check_cahce = 0, read_memory = 0, read_cache = 0
+# Assertion: s_read_when_miss fail!
+# Assertion: s_read_mem fail!
+# [155] check_cahce = 0, read_memory = 0, read_cache = 0
+# Assertion: s_read_when_miss fail!
+# Assertion: s_read_mem fail!
+# Assertion: s_check fail!
+# [165] check_cahce = 0, read_memory = 0, read_cache = 0
+# Assertion: p_check_impl fail!
+# Assertion: s_read_when_miss fail!
+# Assertion: s_read_mem fail!
+# Assertion: s_check fail!
+# [175] check_cahce = 1, read_memory = 0, read_cache = 0
+# Assertion: p_check_impl fail!
+# Assertion: s_read_when_miss fail!
+# Assertion: s_read_mem fail!
+# Assertion: s_check fail!
+# Assertion: s_check fail!
+# [185] check_cahce = 1, read_memory = 0, read_cache = 0
+# Assertion: p_check_impl fail!
+# Assertion: s_read_when_miss fail!
+# Assertion: s_read_mem fail!
+# Assertion: s_check fail!
+# [195] check_cahce = 1, read_memory = 0, read_cache = 0
+# Assertion: s_read_when_miss fail!
+# Assertion: s_read_mem fail!
+# Assertion: s_check fail!
+# [205] check_cahce = 1, read_memory = 0, read_cache = 0
+# Assertion: s_read_when_miss fail!
+# Assertion: s_read_mem fail!
+# Assertion: s_check fail!
+# ==========================================================
+# Scenario 3 Ends ... 
+# ==========================================================
+# ** Note: $stop    : tb.sv(114)
+#    Time: 210 ns  Iteration: 0  Instance: /tb
+# Break in Module tb at tb.sv line 114
+# Stopped at tb.sv line 114
+# End time: 19:04:52 on Jun 01,2022, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0

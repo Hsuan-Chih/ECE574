@@ -1,0 +1,163 @@
+$date
+	Wed Jun  1 19:04:49 2022
+$end
+$version
+	ModelSim Version 2021.2
+$end
+$timescale
+	1ns
+$end
+
+$scope module tb $end
+$var parameter 32 ! CYCLE $end
+$var reg 8 " address [7:0] $end
+$var reg 1 # read $end
+$var reg 2 $ hit_or_miss [1:0] $end
+$var reg 1 % clk $end
+$var reg 1 & rst $end
+$var reg 1 ' read_memory $end
+$var reg 1 ( read_cache $end
+$var reg 1 ) check_cache $end
+
+$scope begin ap_1 $end
+$upscope $end
+
+$scope begin cp_1 $end
+$upscope $end
+
+$scope begin ap_2 $end
+$upscope $end
+
+$scope begin cp_2 $end
+$upscope $end
+
+$scope begin ap_3 $end
+$upscope $end
+
+$scope begin cp_3 $end
+$upscope $end
+
+$scope begin ap_4 $end
+$upscope $end
+
+$scope begin cp_4 $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 "
+0#
+b0 $
+0%
+1&
+0'
+0(
+1)
+b1010 !
+$end
+#5
+1%
+#10
+0&
+0%
+#15
+1%
+#20
+1#
+0%
+#25
+1%
+0)
+#30
+0#
+b1 $
+0%
+#35
+1%
+1(
+#40
+0%
+#45
+1%
+0(
+#50
+b0 $
+0%
+#55
+1%
+1)
+#60
+0%
+#65
+1%
+#70
+1#
+0%
+#75
+1%
+0)
+#80
+0#
+0%
+#85
+1%
+#90
+b10 $
+0%
+#95
+1%
+1'
+#100
+0%
+#105
+1%
+0'
+#110
+b0 $
+0%
+#115
+1%
+1)
+#120
+0%
+#125
+1%
+#130
+1#
+0%
+#135
+1%
+0)
+#140
+0#
+0%
+#145
+1%
+#150
+0%
+#155
+1%
+#160
+0%
+#165
+1%
+#170
+1&
+0%
+1)
+#175
+1%
+#180
+0%
+#185
+1%
+#190
+0&
+0%
+#195
+1%
+#200
+0%
+#205
+1%

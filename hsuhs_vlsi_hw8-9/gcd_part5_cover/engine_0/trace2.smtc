@@ -1,0 +1,26 @@
+initial
+assume (= [$and$gcd.sv:0$15_Y] false)
+assume (= [$and$gcd.sv:0$22_Y] false)
+assume (= [$auto$async2sync.cc:104:execute$140] false)
+assume (= [$auto$async2sync.cc:104:execute$144] #b00000000000000000000000000000000)
+assume (= [$auto$async2sync.cc:104:execute$148] #b00000000000000000000000000000000)
+assume (= [$formal$gcd.sv:20$3_CHECK] false)
+assume (= [$formal$gcd.sv:20$3_EN] false)
+assume (= [$formal$gcd.sv:24$4_CHECK] false)
+assume (= [gcd_ctrl_0.$auto$async2sync.cc:104:execute$152] #b00)
+
+state 0
+assume (= [a_in] #b00000000000000000000000000000000)
+assume (= [b_in] #b00000000000000000000000000000000)
+assume (= [clck] false)
+assume (= [clk] false)
+assume (= [reset_n] false)
+assume (= [start] false)
+
+state 1
+assume (= [a_in] #b00000000000000000000000000000000)
+assume (= [b_in] #b00000000000000000000000000000000)
+assume (= [clck] false)
+assume (= [clk] false)
+assume (= [reset_n] false)
+assume (= [start] false)

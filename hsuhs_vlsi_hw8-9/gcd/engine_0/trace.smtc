@@ -1,0 +1,15 @@
+initial
+assume (= [$auto$async2sync.cc:104:execute$104] false)
+assume (= [$auto$async2sync.cc:104:execute$86] false)
+assume (= [$auto$async2sync.cc:104:execute$90] #b00000000000000000000000000000000)
+assume (= [$auto$async2sync.cc:148:execute$94] true)
+assume (= [gcd_ctrl_0.$auto$async2sync.cc:104:execute$108] #b00)
+assume (= [result] #b10000000000000000000000000000000)
+
+state 0
+assume (= [a_in] #b00000000000000000000000000000000)
+assume (= [b_in] #b00000000000000000000000000000000)
+assume (= [clck] false)
+assume (= [clk] false)
+assume (= [reset_n] false)
+assume (= [start] false)

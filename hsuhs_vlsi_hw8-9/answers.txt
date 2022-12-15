@@ -1,0 +1,12 @@
+Give some thought to the sensitivity list of the always block in which the assertion is evaluated: 
+should it be posedge clk, or *? Why?
+
+Ans: it should be @(*). This is becasue clk in this situation is not the only sensitivity list,
+but the "condition", reset_n, is also the important sensitivity list too.
+To be specifically, because reset_n is asynchronous reset, that's why we can not have the clk to be the only sensitivity list.
+And the asynchronous reset is the key hint to modify the guilty code.
+
+==============================================================================
+What is the result of YoSys in Part 3? Fail or Pass?
+
+Ans: it is fail in Part3.

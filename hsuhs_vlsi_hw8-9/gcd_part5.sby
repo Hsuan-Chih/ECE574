@@ -1,0 +1,20 @@
+[tasks]
+cover
+
+[options]
+cover: 
+mode cover
+depth 10
+
+[engines]
+cover:
+smtbmc 
+
+[script]
+read -formal gcd.sv 
+read -formal gcd_ctrl.sv
+prep -top gcd
+
+[files]
+gcd.sv 
+gcd_ctrl.sv

@@ -1,0 +1,590 @@
+# //  ModelSim SE-64 2021.2 Apr 14 2021 Linux 3.10.0-1160.59.1.el7.x86_64
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do count_gl.do
+# Model Technology ModelSim SE-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:53:16 on May 12,2022
+# vlog -reportprogress 300 tb_gl.sv gate_src/count.gate.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/AND2X1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/AND2X2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/AND2X4.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/AND3X1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/AND3X2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/AND3X4.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/AND4X1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/AND4X2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/AND4X4.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/AO21X1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/AO21X2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/AO221X1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/AO221X2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/AO222X1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/AO222X2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/AO22X1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/AO22X2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/AOBUFX1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/AOBUFX2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/AOBUFX4.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/AODFFARX1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/AODFFARX2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/AODFFNARX1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/AODFFNARX2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/AOI21X1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/AOI21X2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/AOI221X1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/AOI221X2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/AOI222X1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/AOI222X2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/AOI22X1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/AOI22X2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/AOINVX1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/AOINVX2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/AOINVX4.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/CGLNPRX2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/CGLNPRX8.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/CGLNPSX16.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/CGLNPSX2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/CGLNPSX4.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/CGLNPSX8.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/CGLPPRX2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/CGLPPRX8.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/CGLPPSX16.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/CGLPPSX2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/CGLPPSX4.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/CGLPPSX8.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DEC24X1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DEC24X2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DELLN1X2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DELLN2X2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DELLN3X2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFARX1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFARX2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFASRX1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFASRX2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFASX1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFASX2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFNARX1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFNARX2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFNASRNX1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFNASRNX2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFNASRQX1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFNASRQX2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFNASRX1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFNASRX2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFNASX1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFNASX2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFNX1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFNX2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFSSRX1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFSSRX2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFX1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFX2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/FADDX1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/FADDX2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/HADDX1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/HADDX2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/IBUFFX16.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/IBUFFX2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/IBUFFX32.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/IBUFFX4.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/IBUFFX8.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/INVX0.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/INVX1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/INVX16.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/INVX2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/INVX32.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/INVX4.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/INVX8.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/ISOLANDX1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/ISOLANDX2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/ISOLANDX4.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/ISOLANDX8.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/ISOLORX1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/ISOLORX2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/ISOLORX4.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/ISOLORX8.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LARX1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LARX2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LASRNX1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LASRNX2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LASRQX1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LASRQX2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LASRX1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LASRX2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LASX1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LASX2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LNANDX1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LNANDX2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LSDNENx1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LSDNENx2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LSDNENx4.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LSDNENx8.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LSDNX1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LSDNX2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LSDNX4.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LSDNX8.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LSUPENx1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LSUPENx2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LSUPENx4.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LSUPENx8.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LSUPX1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LSUPX2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LSUPX4.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LSUPX8.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/MUX21X1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/MUX21X2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/MUX41X1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/MUX41X2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/NAND2X0.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/NAND2X1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/NAND2X2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/NAND2X4.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/NAND3X0.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/NAND3X1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/NAND3X2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/NAND3X4.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/NAND4X0.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/NAND4X1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/NBUFFX16.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/NBUFFX2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/NBUFFX32.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/NBUFFX4.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/NBUFFX8.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/NOR2X0.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/NOR2X1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/NOR2X2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/NOR2X4.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/NOR3X0.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/NOR3X1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/NOR3X2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/NOR3X4.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/NOR4X0.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/NOR4X1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/OA21X1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/OA21X2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/OA221X1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/OA221X2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/OA222X1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/OA222X2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/OA22X1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/OA22X2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/OAI21X1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/OAI21X2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/OAI221X1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/OAI221X2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/OAI222X1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/OAI222X2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/OAI22X1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/OAI22X2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/OR2X1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/OR2X2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/OR2X4.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/OR3X1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/OR3X2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/OR3X4.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/OR4X1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/OR4X2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/OR4X4.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/RDFFNX1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/RDFFNX2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/RDFFX1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/RDFFX2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/RSDFFNX1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/RSDFFNX2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/RSDFFX1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/RSDFFX2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/SDFFARX1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/SDFFARX2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/SDFFASRSX1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/SDFFASRSX2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/SDFFASRX1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/SDFFASRX2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/SDFFASX1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/SDFFASX2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/SDFFNARX1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/SDFFNARX2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/SDFFNASRX1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/SDFFNASRX2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/SDFFNASX1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/SDFFNASX2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/SDFFNX1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/SDFFNX2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/SDFFSSRX1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/SDFFSSRX2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/SDFFX1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/SDFFX2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/TNBUFFHX1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/TNBUFFHX16.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/TNBUFFHX2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/TNBUFFHX32.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/TNBUFFHX4.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/TNBUFFHX8.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/XNOR2X1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/XNOR2X2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/XNOR3X1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/XNOR3X2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/XOR2X1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/XOR2X2.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/XOR3X1.v /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/XOR3X2.v -work work_gate 
+# -- Compiling module tb_count
+# -- Compiling module count_W8
+# -- Compiling module AND2X1
+# -- Compiling module AND2X2
+# -- Compiling module AND2X4
+# -- Compiling module AND3X1
+# -- Compiling module AND3X2
+# -- Compiling module AND3X4
+# -- Compiling module AND4X1
+# -- Compiling module AND4X2
+# -- Compiling module AND4X4
+# -- Compiling module AO21X1
+# -- Compiling module AO21X2
+# -- Compiling module AO221X1
+# -- Compiling module AO221X2
+# -- Compiling module AO222X1
+# -- Compiling module AO222X2
+# -- Compiling module AO22X1
+# -- Compiling module AO22X2
+# -- Compiling module AOBUFX1
+# -- Compiling module AOBUFX2
+# -- Compiling module AOBUFX4
+# -- Compiling module AODFFARX1
+# -- Compiling UDP s_aodffarx1_Q
+# -- Compiling module AODFFARX2
+# -- Compiling UDP s_aodffarx2_Q
+# -- Compiling module AODFFNARX1
+# -- Compiling UDP s_aodffnarx1_Q
+# -- Compiling module AODFFNARX2
+# -- Compiling UDP s_aodffnarx2_Q
+# -- Compiling module AOI21X1
+# -- Compiling module AOI21X2
+# -- Compiling module AOI221X1
+# -- Compiling module AOI221X2
+# -- Compiling module AOI222X1
+# -- Compiling module AOI222X2
+# -- Compiling module AOI22X1
+# -- Compiling module AOI22X2
+# -- Compiling module AOINVX1
+# -- Compiling module AOINVX2
+# -- Compiling module AOINVX4
+# -- Compiling module CGLNPRX2
+# -- Compiling module s_cglnprx2
+# -- Compiling module CGLNPRX8
+# -- Compiling module s_cglnprx8
+# -- Compiling module CGLNPSX16
+# -- Compiling module s_cglnpsx16
+# -- Compiling module CGLNPSX2
+# -- Compiling module s_cglnpsx2
+# -- Compiling module CGLNPSX4
+# -- Compiling module s_cglnpsx4
+# -- Compiling module CGLNPSX8
+# -- Compiling module s_cglnpsx8
+# -- Compiling module CGLPPRX2
+# -- Compiling module s_cglpprx2
+# -- Compiling module CGLPPRX8
+# -- Compiling module s_cglpprx8
+# -- Compiling module CGLPPSX16
+# -- Compiling module s_cglppsx16
+# -- Compiling module CGLPPSX2
+# -- Compiling module s_cglppsx2
+# -- Compiling module CGLPPSX4
+# -- Compiling module s_cglppsx4
+# -- Compiling module CGLPPSX8
+# -- Compiling module s_cglppsx8
+# -- Compiling module DEC24X1
+# -- Compiling UDP s_dec24x1_Q3
+# -- Compiling UDP s_dec24x1_Q2
+# -- Compiling UDP s_dec24x1_Q1
+# -- Compiling UDP s_dec24x1_Q0
+# -- Compiling module DEC24X2
+# -- Compiling UDP s_dec24x2_Q3
+# -- Compiling UDP s_dec24x2_Q2
+# -- Compiling UDP s_dec24x2_Q1
+# -- Compiling UDP s_dec24x2_Q0
+# -- Compiling module DELLN1X2
+# -- Compiling module DELLN2X2
+# -- Compiling module DELLN3X2
+# -- Compiling module DFFARX1
+# -- Compiling UDP s_dffarx1_Q
+# -- Compiling module DFFARX2
+# -- Compiling UDP s_dffarx2_Q
+# -- Compiling module DFFASRX1
+# -- Compiling UDP s_dffasrx1_QN
+# -- Compiling UDP s_dffasrx1_Q
+# -- Compiling module DFFASRX2
+# -- Compiling UDP s_dffasrx2_QN
+# -- Compiling UDP s_dffasrx2_Q
+# -- Compiling module DFFASX1
+# -- Compiling UDP s_dffasx1_Q
+# -- Compiling module DFFASX2
+# -- Compiling UDP s_dffasx2_Q
+# -- Compiling module DFFNARX1
+# -- Compiling UDP s_dffnarx1_Q
+# -- Compiling module DFFNARX2
+# -- Compiling UDP s_dffnarx2_Q
+# -- Compiling module DFFNASRNX1
+# -- Compiling UDP s_dffnasrnx1
+# -- Compiling module DFFNASRNX2
+# -- Compiling UDP s_dffnasrnx2
+# -- Compiling module DFFNASRQX1
+# -- Compiling UDP s_dffnasrqx1
+# -- Compiling module DFFNASRQX2
+# -- Compiling UDP s_dffnasrqx2
+# -- Compiling module DFFNASRX1
+# -- Compiling UDP s_dffnasrx1_QN
+# -- Compiling UDP s_dffnasrx1_Q
+# -- Compiling module DFFNASRX2
+# -- Compiling UDP s_dffnasrx2_QN
+# -- Compiling UDP s_dffnasrx2_Q
+# -- Compiling module DFFNASX1
+# -- Compiling UDP s_dffnasx1_Q
+# -- Compiling module DFFNASX2
+# -- Compiling UDP s_dffnasx2_Q
+# -- Compiling module DFFNX1
+# -- Compiling UDP s_dffnx1_Q
+# -- Compiling module DFFNX2
+# -- Compiling UDP s_dffnx2_Q
+# -- Compiling module DFFSSRX1
+# -- Compiling UDP s_dffssrx1_Q
+# -- Compiling module DFFSSRX2
+# -- Compiling UDP s_dffssrx2_Q
+# -- Compiling module DFFX1
+# -- Compiling UDP s_dffx1_Q
+# -- Compiling module DFFX2
+# -- Compiling UDP s_dffx2_Q
+# -- Compiling module FADDX1
+# -- Compiling UDP s_faddx1_S
+# -- Compiling UDP s_faddx1_CO
+# -- Compiling module FADDX2
+# -- Compiling UDP s_faddx2_S
+# -- Compiling UDP s_faddx2_CO
+# -- Compiling module HADDX1
+# -- Compiling module HADDX2
+# -- Compiling module IBUFFX16
+# -- Compiling module IBUFFX2
+# -- Compiling module IBUFFX32
+# -- Compiling module IBUFFX4
+# -- Compiling module IBUFFX8
+# -- Compiling module INVX0
+# -- Compiling module INVX1
+# -- Compiling module INVX16
+# -- Compiling module INVX2
+# -- Compiling module INVX32
+# -- Compiling module INVX4
+# -- Compiling module INVX8
+# -- Compiling module ISOLANDX1
+# -- Compiling module ISOLANDX2
+# -- Compiling module ISOLANDX4
+# -- Compiling module ISOLANDX8
+# -- Compiling module ISOLORX1
+# -- Compiling module ISOLORX2
+# -- Compiling module ISOLORX4
+# -- Compiling module ISOLORX8
+# -- Compiling module LARX1
+# -- Compiling module s_larx1
+# -- Compiling module LARX2
+# -- Compiling module s_larx2
+# -- Compiling module LASRNX1
+# -- Compiling module s_lasrnx1
+# -- Compiling module LASRNX2
+# -- Compiling module s_lasrnx2
+# -- Compiling module LASRQX1
+# -- Compiling module s_lasrqx1
+# -- Compiling module LASRQX2
+# -- Compiling module s_lasrqx2
+# -- Compiling module LASRX1
+# -- Compiling module s_lasrx1
+# -- Compiling module LASRX2
+# -- Compiling module s_lasrx2
+# -- Compiling module LASX1
+# -- Compiling module s_lasx1
+# -- Compiling module LASX2
+# -- Compiling module s_lasx2
+# -- Compiling module LATCHX1
+# -- Compiling module s_latchx1
+# -- Compiling module LATCHX2
+# -- Compiling module s_latchx2
+# -- Compiling module LNANDX1
+# -- Compiling module LNANDX2
+# -- Compiling module LSDNENX1
+# -- Compiling module LSDNENX2
+# -- Compiling module LSDNENX4
+# -- Compiling module LSDNENX8
+# -- Compiling module LSDNX1
+# -- Compiling module LSDNX2
+# -- Compiling module LSDNX4
+# -- Compiling module LSDNX8
+# -- Compiling module LSUPENX1
+# -- Compiling module LSUPENX2
+# -- Compiling module LSUPENX4
+# -- Compiling module LSUPENX8
+# -- Compiling module LSUPX1
+# -- Compiling module LSUPX2
+# -- Compiling module LSUPX4
+# -- Compiling module LSUPX8
+# -- Compiling module MUX21X1
+# -- Compiling UDP s_mux21x1
+# -- Compiling module MUX21X2
+# -- Compiling UDP s_mux21x2
+# -- Compiling module MUX41X1
+# -- Compiling UDP s_mux41x1
+# -- Compiling module MUX41X2
+# -- Compiling UDP s_mux41x2
+# -- Compiling module NAND2X0
+# -- Compiling module NAND2X1
+# -- Compiling module NAND2X2
+# -- Compiling module NAND2X4
+# -- Compiling module NAND3X0
+# -- Compiling module NAND3X1
+# -- Compiling module NAND3X2
+# -- Compiling module NAND3X4
+# -- Compiling module NAND4X0
+# -- Compiling module NAND4X1
+# -- Compiling module NBUFFX16
+# -- Compiling module NBUFFX2
+# -- Compiling module NBUFFX32
+# -- Compiling module NBUFFX4
+# -- Compiling module NBUFFX8
+# -- Compiling module NOR2X0
+# -- Compiling module NOR2X1
+# -- Compiling module NOR2X2
+# -- Compiling module NOR2X4
+# -- Compiling module NOR3X0
+# -- Compiling module NOR3X1
+# -- Compiling module NOR3X2
+# -- Compiling module NOR3X4
+# -- Compiling module NOR4X0
+# -- Compiling module NOR4X1
+# -- Compiling module OA21X1
+# -- Compiling module OA21X2
+# -- Compiling module OA221X1
+# -- Compiling module OA221X2
+# -- Compiling module OA222X1
+# -- Compiling module OA222X2
+# -- Compiling module OA22X1
+# -- Compiling module OA22X2
+# -- Compiling module OAI21X1
+# -- Compiling module OAI21X2
+# -- Compiling module OAI221X1
+# -- Compiling module OAI221X2
+# -- Compiling module OAI222X1
+# -- Compiling module OAI222X2
+# -- Compiling module OAI22X1
+# -- Compiling module OAI22X2
+# -- Compiling module OR2X1
+# -- Compiling module OR2X2
+# -- Compiling module OR2X4
+# -- Compiling module OR3X1
+# -- Compiling module OR3X2
+# -- Compiling module OR3X4
+# -- Compiling module OR4X1
+# -- Compiling module OR4X2
+# -- Compiling module OR4X4
+# -- Compiling module RDFFNX1
+# -- Compiling UDP s_rdffnx1_Q
+# -- Compiling module RDFFNX2
+# -- Compiling UDP s_rdffnx2_Q
+# -- Compiling module RDFFX1
+# -- Compiling UDP s_rdffx1_Q
+# -- Compiling module RDFFX2
+# -- Compiling UDP s_RDFFX2_Q
+# -- Compiling module rsdffnx1
+# -- Compiling UDP s_rsdffnx1_Q
+# -- Compiling module rsdffnx2
+# -- Compiling UDP s_rsdffnx2_Q
+# -- Compiling module RSDFFX1
+# -- Compiling UDP s_rsdffx1_Q
+# -- Compiling module RSDFFX2
+# -- Compiling UDP s_rsdffx2_Q
+# -- Compiling module SDFFARX1
+# -- Compiling UDP s_sdffarx1_Q
+# -- Compiling module SDFFARX2
+# -- Compiling UDP s_sdffarx2_Q
+# -- Compiling module SDFFASRSX1
+# -- Compiling UDP s_sdffasrsx1_S0
+# -- Compiling UDP s_sdffasrsx1_QN
+# -- Compiling UDP s_sdffasrsx1_Q
+# -- Compiling module SDFFASRSX2
+# -- Compiling UDP s_sdffasrsx2_S0
+# -- Compiling UDP s_sdffasrsx2_QN
+# -- Compiling UDP s_sdffasrsx2_Q
+# -- Compiling module SDFFASRX1
+# -- Compiling UDP s_sdffasrx1_QN
+# -- Compiling UDP s_sdffasrx1_Q
+# -- Compiling module SDFFASRX2
+# -- Compiling UDP s_sdffasrx2_QN
+# -- Compiling UDP s_sdffasrx2_Q
+# -- Compiling module SDFFASX1
+# -- Compiling UDP s_sdffasx1_Q
+# -- Compiling module SDFFASX2
+# -- Compiling UDP s_sdffasx2_Q
+# -- Compiling module SDFFNARX1
+# -- Compiling UDP s_sdffnarx1_Q
+# -- Compiling module SDFFNARX2
+# -- Compiling UDP s_sdffnarx2_Q
+# -- Compiling module SDFFNASRX1
+# -- Compiling UDP s_sdffnasrx1_QN
+# -- Compiling UDP s_sdffnasrx1_Q
+# -- Compiling module SDFFNASRX2
+# -- Compiling UDP s_sdffnasrx2_QN
+# -- Compiling UDP s_sdffnasrx2_Q
+# -- Compiling module SDFFNASX1
+# -- Compiling UDP s_sdffnasx1_Q
+# -- Compiling module SDFFNASX2
+# -- Compiling UDP s_sdffnasx2_Q
+# -- Compiling module SDFFNX1
+# -- Compiling UDP s_sdffnx1_Q
+# -- Compiling module SDFFNX2
+# -- Compiling UDP s_sdffnx2_Q
+# -- Compiling module SDFFSSRX1
+# -- Compiling UDP s_sdffssrx1_Q
+# -- Compiling module SDFFSSRX2
+# -- Compiling UDP s_sdffssrx2_Q
+# -- Compiling module SDFFX1
+# -- Compiling UDP s_sdffx1_Q
+# -- Compiling module SDFFX2
+# -- Compiling UDP s_sdffx2_Q
+# -- Compiling module TNBUFFHX1
+# -- Compiling module TNBUFFHX16
+# -- Compiling module TNBUFFHX2
+# -- Compiling module TNBUFFHX32
+# -- Compiling module TNBUFFHX4
+# -- Compiling module TNBUFFHX8
+# -- Compiling module XNOR2X1
+# -- Compiling module XNOR2X2
+# -- Compiling module XNOR3X1
+# -- Compiling module XNOR3X2
+# -- Compiling module XOR2X1
+# -- Compiling module XOR2X2
+# -- Compiling module XOR3X1
+# -- Compiling module XOR3X2
+# 
+# Top level modules:
+# 	tb_count
+# 	AND2X1
+# 	AND2X2
+# 	AND2X4
+# 	AND3X2
+# 	AND3X4
+# 	AND4X1
+# 	AND4X2
+# 	AND4X4
+# 	AO21X2
+# 	AO221X1
+# 	AO221X2
+# 	AO222X2
+# 	AO22X2
+# 	AOBUFX1
+# 	AOBUFX2
+# 	AOBUFX4
+# 	AODFFARX1
+# 	AODFFARX2
+# 	AODFFNARX1
+# 	AODFFNARX2
+# 	AOI21X2
+# 	AOI221X1
+# 	AOI221X2
+# 	AOI222X1
+# 	AOI222X2
+# 	AOI22X1
+# 	AOI22X2
+# 	AOINVX1
+# 	AOINVX2
+# 	AOINVX4
+# 	CGLNPRX2
+# 	CGLNPRX8
+# 	CGLNPSX16
+# 	CGLNPSX2
+# 	CGLNPSX4
+# 	CGLNPSX8
+# 	CGLPPRX2
+# 	CGLPPRX8
+# 	CGLPPSX16
+# 	CGLPPSX2
+# 	CGLPPSX4
+# 	CGLPPSX8
+# 	DEC24X1
+# 	DEC24X2
+# 	DELLN1X2
+# 	DELLN2X2
+# 	DELLN3X2
+# 	DFFARX2
+# 	DFFASRX1
+# 	DFFASRX2
+# 	DFFASX1
+# 	DFFASX2
+# 	DFFNARX1
+# 	DFFNARX2
+# 	DFFNASRNX1
+# 	DFFNASRNX2
+# 	DFFNASRQX1
+# 	DFFNASRQX2
+# 	DFFNASRX1
+# 	DFFNASRX2
+# 	DFFNASX1
+# 	DFFNASX2
+# 	DFFNX1
+# 	DFFNX2
+# 	DFFSSRX2
+# 	DFFX2
+# 	FADDX1
+# 	FADDX2
+# 	HADDX1
+# 	HADDX2
+# 	IBUFFX16
+# 	IBUFFX2
+# 	IBUFFX32
+# 	IBUFFX4
+# 	IBUFFX8
+# 	INVX1
+# 	INVX16
+# 	INVX2
+# 	INVX32
+# 	INVX4
+# 	INVX8
+# 	ISOLANDX1
+# 	ISOLANDX2
+# 	ISOLANDX4
+# 	ISOLANDX8
+# 	ISOLORX1
+# 	ISOLORX2
+# 	ISOLORX4
+# 	ISOLORX8
+# 	LARX1
+# 	LARX2
+# 	LASRNX1
+# 	LASRNX2
+# 	LASRQX1
+# 	LASRQX2
+# 	LASRX1
+# 	LASRX2
+# 	LASX1
+# 	LASX2
+# 	LATCHX1
+# 	LATCHX2
+# 	LNANDX1
+# 	LNANDX2
+# 	LSDNENX1
+# 	LSDNENX2
+# 	LSDNENX4
+# 	LSDNENX8
+# 	LSDNX1
+# 	LSDNX2
+# 	LSDNX4
+# 	LSDNX8
+# 	LSUPENX1
+# 	LSUPENX2
+# 	LSUPENX4
+# 	LSUPENX8
+# 	LSUPX1
+# 	LSUPX2
+# 	LSUPX4
+# 	LSUPX8
+# 	MUX21X2
+# 	MUX41X1
+# 	MUX41X2
+# 	NAND2X1
+# 	NAND2X2
+# 	NAND2X4
+# 	NAND3X1
+# 	NAND3X2
+# 	NAND3X4
+# 	NAND4X1
+# 	NBUFFX16
+# 	NBUFFX2
+# 	NBUFFX32
+# 	NBUFFX4
+# 	NBUFFX8
+# 	NOR2X1
+# 	NOR2X2
+# 	NOR2X4
+# 	NOR3X1
+# 	NOR3X2
+# 	NOR3X4
+# 	NOR4X1
+# 	OA21X1
+# 	OA21X2
+# 	OA221X1
+# 	OA221X2
+# 	OA222X1
+# 	OA222X2
+# 	OA22X1
+# 	OA22X2
+# 	OAI21X1
+# 	OAI21X2
+# 	OAI221X1
+# 	OAI221X2
+# 	OAI222X1
+# 	OAI222X2
+# 	OAI22X1
+# 	OAI22X2
+# 	OR2X1
+# 	OR2X2
+# 	OR2X4
+# 	OR3X1
+# 	OR3X2
+# 	OR3X4
+# 	OR4X1
+# 	OR4X2
+# 	OR4X4
+# 	RDFFNX1
+# 	RDFFNX2
+# 	RDFFX1
+# 	RDFFX2
+# 	rsdffnx1
+# 	rsdffnx2
+# 	RSDFFX1
+# 	RSDFFX2
+# 	SDFFARX1
+# 	SDFFARX2
+# 	SDFFASRSX1
+# 	SDFFASRSX2
+# 	SDFFASRX1
+# 	SDFFASRX2
+# 	SDFFASX1
+# 	SDFFASX2
+# 	SDFFNARX1
+# 	SDFFNARX2
+# 	SDFFNASRX1
+# 	SDFFNASRX2
+# 	SDFFNASX1
+# 	SDFFNASX2
+# 	SDFFNX1
+# 	SDFFNX2
+# 	SDFFSSRX1
+# 	SDFFSSRX2
+# 	SDFFX1
+# 	SDFFX2
+# 	TNBUFFHX1
+# 	TNBUFFHX16
+# 	TNBUFFHX2
+# 	TNBUFFHX32
+# 	TNBUFFHX4
+# 	TNBUFFHX8
+# 	XNOR2X1
+# 	XNOR2X2
+# 	XNOR3X1
+# 	XNOR3X2
+# 	XOR2X1
+# 	XOR2X2
+# 	XOR3X1
+# 	XOR3X2
+# End time: 21:53:17 on May 12,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work_gate.tb_count 
+# Start time: 21:53:34 on May 12,2022
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.tb_count(fast)
+# Loading work.count_W8(fast)
+# Loading work.DFFARX1(fast)
+# Loading work.DFFX1(fast)
+# Loading work.DFFSSRX1(fast)
+# Loading work.NOR4X0(fast)
+# Loading work.NAND4X0(fast)
+# Loading work.AO21X1(fast)
+# Loading work.AO222X1(fast)
+# Loading work.NOR2X0(fast)
+# Loading work.AOI21X1(fast)
+# Loading work.MUX21X1(fast)
+# Loading work.NOR3X0(fast)
+# Loading work.AND3X1(fast)
+# Loading work.INVX0(fast)
+# Loading work.NAND3X0(fast)
+# Loading work.NAND2X0(fast)
+# Loading work.AO22X1(fast)
+# ** Note: $stop    : tb_gl.sv(71)
+#    Time: 410 ns  Iteration: 0  Instance: /tb_count
+# Break in Module tb_count at tb_gl.sv line 71
+quit
+# End time: 21:54:24 on May 12,2022, Elapsed time: 0:00:50
+# Errors: 0, Warnings: 0

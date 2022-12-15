@@ -1,0 +1,624 @@
+# do scripts/part6.do
+# Model Technology ModelSim SE-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 04:46:53 on May 25,2022
+# vlog src/tb.sv src/gcd.sv src/gcd_ctrl.sv 
+# -- Compiling package tb_sv_unit
+# -- Compiling module tb
+# -- Compiling module gcd
+# -- Compiling module gcd_ctrl
+# 
+# Top level modules:
+# 	tb
+# End time: 04:46:53 on May 25,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim tb -c 
+# Start time: 04:46:53 on May 25,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  ModelSim SE-64 2021.2 Apr 14 2021 Linux 3.10.0-1160.59.1.el7.x86_64
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.tb_sv_unit(fast)
+# Loading work.tb(fast)
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ns  Iteration: 0  Instance: /tb File: src/tb.sv Line: 70
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ns  Iteration: 0  Instance: /tb File: src/tb.sv Line: 104
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ns  Iteration: 0  Instance: /tb File: src/tb.sv Line: 197
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ns  Iteration: 0  Instance: /tb File: src/tb.sv Line: 275
+# --------------------------------------------------
+# Executing Part1.1 ... 
+# --------------------------------------------------
+# a_in=      3430   b_in=      2060   result=        10
+# a_in=      3435   b_in=   2342340   result=        15
+# a_in=     13435   b_in=   3434290   result=         5
+# a_in=  23232502   b_in= 343535354   result=         2
+# a_in=      5975   b_in=   3859034   result=         1
+# a_in=      1930   b_in=        34   result=         2
+# a_in=        39   b_in=        13   result=        13
+# a_in=         9   b_in=         3   result=         3
+# a_in=        14   b_in=        92   result=         2
+# a_in=       210   b_in=       124   result=         2
+# a_in=    116150   b_in=    232704   result=       202
+# --------------------------------------------------
+# Executing Part1.2 ... 
+# --------------------------------------------------
+# SUCCESS: OPEN FILE -> post_input_data
+# SUCCESS: OPEN FILE -> post_output_data
+# a_in=      3430   b_in=      2060   result=        10
+# a_in=      3435   b_in=   2342340   result=        15
+# a_in=     13435   b_in=   3434290   result=         5
+# a_in=  23232502   b_in= 343535354   result=         2
+# a_in=      5975   b_in=   3859034   result=         1
+# a_in=      1930   b_in=        34   result=         2
+# a_in=        39   b_in=        13   result=        13
+# a_in=         9   b_in=         3   result=         3
+# a_in=        14   b_in=        92   result=         2
+# a_in=       210   b_in=       124   result=         2
+# a_in=    116150   b_in=    232704   result=       202
+# a_in=         6   b_in=         6   result=         6
+# a_in=         0   b_in=         0   result=         0
+# a_in=         1   b_in=         1   result=         1
+# a_in=      5000   b_in=      5000   result=      5000
+# --------------------------------------------------
+# Executing Part2 ... 
+# --------------------------------------------------
+# SUCCESS: OPEN FILE -> random-outputs.txt
+# a_in=       495   b_in=         5   result=         5
+# a_in=       230   b_in=       270   result=        10
+# a_in=       399   b_in=       101   result=         1
+# a_in=       452   b_in=        48   result=         4
+# a_in=        12   b_in=       488   result=         4
+# a_in=       334   b_in=       166   result=         2
+# a_in=        24   b_in=       476   result=         4
+# a_in=       361   b_in=       139   result=         1
+# a_in=       308   b_in=       192   result=         4
+# a_in=       141   b_in=       359   result=         1
+# a_in=       161   b_in=       339   result=         1
+# a_in=       182   b_in=       318   result=         2
+# a_in=        67   b_in=       433   result=         1
+# a_in=       223   b_in=       277   result=         1
+# a_in=        42   b_in=       458   result=         2
+# a_in=         2   b_in=       498   result=         2
+# a_in=       133   b_in=       367   result=         1
+# a_in=       352   b_in=       148   result=         4
+# a_in=       139   b_in=       361   result=         1
+# a_in=       493   b_in=         7   result=         1
+# a_in=       334   b_in=       166   result=         2
+# a_in=       117   b_in=       383   result=         1
+# a_in=       389   b_in=       111   result=         1
+# a_in=        15   b_in=       485   result=         5
+# a_in=       268   b_in=       232   result=         4
+# a_in=       236   b_in=       264   result=         4
+# a_in=       109   b_in=       391   result=         1
+# a_in=       428   b_in=        72   result=         4
+# a_in=       487   b_in=        13   result=         1
+# a_in=       161   b_in=       339   result=         1
+# a_in=       435   b_in=        65   result=         5
+# a_in=       313   b_in=       187   result=         1
+# a_in=       234   b_in=       266   result=         2
+# a_in=       114   b_in=       386   result=         2
+# a_in=        18   b_in=       482   result=         2
+# a_in=       447   b_in=        53   result=         1
+# a_in=       238   b_in=       262   result=         2
+# a_in=       315   b_in=       185   result=         5
+# a_in=       130   b_in=       370   result=        10
+# a_in=       332   b_in=       168   result=         4
+# a_in=       101   b_in=       399   result=         1
+# a_in=       382   b_in=       118   result=         2
+# a_in=       390   b_in=       110   result=        10
+# a_in=       177   b_in=       323   result=         1
+# a_in=       200   b_in=       300   result=       100
+# a_in=       307   b_in=       193   result=         1
+# a_in=       129   b_in=       371   result=         1
+# a_in=       298   b_in=       202   result=         2
+# a_in=        43   b_in=       457   result=         1
+# a_in=       125   b_in=       375   result=       125
+# a_in=        28   b_in=       472   result=         4
+# a_in=       403   b_in=        97   result=         1
+# a_in=       337   b_in=       163   result=         1
+# a_in=       470   b_in=        30   result=        10
+# a_in=       106   b_in=       394   result=         2
+# a_in=       172   b_in=       328   result=         4
+# a_in=       342   b_in=       158   result=         2
+# a_in=       244   b_in=       256   result=         4
+# a_in=       177   b_in=       323   result=         1
+# a_in=       420   b_in=        80   result=        20
+# a_in=       170   b_in=       330   result=        10
+# a_in=       426   b_in=        74   result=         2
+# a_in=       240   b_in=       260   result=        20
+# a_in=        19   b_in=       481   result=         1
+# a_in=       147   b_in=       353   result=         1
+# a_in=       315   b_in=       185   result=         5
+# a_in=       460   b_in=        40   result=        20
+# a_in=       263   b_in=       237   result=         1
+# a_in=       470   b_in=        30   result=        10
+# a_in=        88   b_in=       412   result=         4
+# a_in=       162   b_in=       338   result=         2
+# a_in=       458   b_in=        42   result=         2
+# a_in=         2   b_in=       498   result=         2
+# a_in=       316   b_in=       184   result=         4
+# a_in=        22   b_in=       478   result=         2
+# a_in=       129   b_in=       371   result=         1
+# a_in=       461   b_in=        39   result=         1
+# a_in=       264   b_in=       236   result=         4
+# a_in=       155   b_in=       345   result=         5
+# a_in=       303   b_in=       197   result=         1
+# a_in=       145   b_in=       355   result=         5
+# a_in=       400   b_in=       100   result=       100
+# a_in=       315   b_in=       185   result=         5
+# a_in=       438   b_in=        62   result=         2
+# a_in=        37   b_in=       463   result=         1
+# a_in=       447   b_in=        53   result=         1
+# a_in=        26   b_in=       474   result=         2
+# a_in=       390   b_in=       110   result=        10
+# a_in=       104   b_in=       396   result=         4
+# a_in=       478   b_in=        22   result=         2
+# a_in=       239   b_in=       261   result=         1
+# a_in=       188   b_in=       312   result=         4
+# a_in=       444   b_in=        56   result=         4
+# a_in=       196   b_in=       304   result=         4
+# a_in=       234   b_in=       266   result=         2
+# a_in=       433   b_in=        67   result=         1
+# a_in=       455   b_in=        45   result=         5
+# a_in=       248   b_in=       252   result=         4
+# a_in=       358   b_in=       142   result=         2
+# a_in=         8   b_in=       492   result=         4
+# a_in=       228   b_in=       272   result=         4
+# a_in=       473   b_in=        27   result=         1
+# a_in=       285   b_in=       215   result=         5
+# a_in=       325   b_in=       175   result=        25
+# a_in=       485   b_in=        15   result=         5
+# a_in=        44   b_in=       456   result=         4
+# a_in=       478   b_in=        22   result=         2
+# a_in=        54   b_in=       446   result=         2
+# a_in=       192   b_in=       308   result=         4
+# a_in=        83   b_in=       417   result=         1
+# a_in=       122   b_in=       378   result=         2
+# a_in=       458   b_in=        42   result=         2
+# a_in=       366   b_in=       134   result=         2
+# a_in=       485   b_in=        15   result=         5
+# a_in=       280   b_in=       220   result=        20
+# a_in=       465   b_in=        35   result=         5
+# a_in=        94   b_in=       406   result=         2
+# a_in=       495   b_in=         5   result=         5
+# a_in=       399   b_in=       101   result=         1
+# a_in=       112   b_in=       388   result=         4
+# a_in=        29   b_in=       471   result=         1
+# a_in=         3   b_in=       497   result=         1
+# a_in=       251   b_in=       249   result=         1
+# a_in=       212   b_in=       288   result=         4
+# a_in=        30   b_in=       470   result=        10
+# a_in=       293   b_in=       207   result=         1
+# a_in=       359   b_in=       141   result=         1
+# a_in=       481   b_in=        19   result=         1
+# a_in=       422   b_in=        78   result=         2
+# a_in=        43   b_in=       457   result=         1
+# a_in=       178   b_in=       322   result=         2
+# a_in=        53   b_in=       447   result=         1
+# a_in=       487   b_in=        13   result=         1
+# a_in=       348   b_in=       152   result=         4
+# a_in=       158   b_in=       342   result=         2
+# a_in=       317   b_in=       183   result=         1
+# a_in=       190   b_in=       310   result=        10
+# a_in=       419   b_in=        81   result=         1
+# a_in=        55   b_in=       445   result=         5
+# a_in=       373   b_in=       127   result=         1
+# a_in=        44   b_in=       456   result=         4
+# a_in=       414   b_in=        86   result=         2
+# a_in=       346   b_in=       154   result=         2
+# a_in=       125   b_in=       375   result=       125
+# a_in=       323   b_in=       177   result=         1
+# a_in=       362   b_in=       138   result=         2
+# a_in=       426   b_in=        74   result=         2
+# a_in=       303   b_in=       197   result=         1
+# a_in=       408   b_in=        92   result=         4
+# a_in=       471   b_in=        29   result=         1
+# a_in=        44   b_in=       456   result=         4
+# a_in=        59   b_in=       441   result=         1
+# a_in=        95   b_in=       405   result=         5
+# a_in=       143   b_in=       357   result=         1
+# a_in=       155   b_in=       345   result=         5
+# a_in=       420   b_in=        80   result=        20
+# a_in=        33   b_in=       467   result=         1
+# a_in=       369   b_in=       131   result=         1
+# a_in=       224   b_in=       276   result=         4
+# a_in=       282   b_in=       218   result=         2
+# a_in=       448   b_in=        52   result=         4
+# a_in=       440   b_in=        60   result=        20
+# a_in=        14   b_in=       486   result=         2
+# a_in=         5   b_in=       495   result=         5
+# a_in=       259   b_in=       241   result=         1
+# a_in=       422   b_in=        78   result=         2
+# a_in=       362   b_in=       138   result=         2
+# a_in=       298   b_in=       202   result=         2
+# a_in=       461   b_in=        39   result=         1
+# a_in=       115   b_in=       385   result=         5
+# a_in=       428   b_in=        72   result=         4
+# a_in=       171   b_in=       329   result=         1
+# a_in=        79   b_in=       421   result=         1
+# a_in=       282   b_in=       218   result=         2
+# a_in=       269   b_in=       231   result=         1
+# a_in=       123   b_in=       377   result=         1
+# a_in=       172   b_in=       328   result=         4
+# a_in=       145   b_in=       355   result=         5
+# a_in=       351   b_in=       149   result=         1
+# a_in=        99   b_in=       401   result=         1
+# a_in=       350   b_in=       150   result=        50
+# a_in=       399   b_in=       101   result=         1
+# a_in=       311   b_in=       189   result=         1
+# a_in=        57   b_in=       443   result=         1
+# a_in=        46   b_in=       454   result=         2
+# a_in=       196   b_in=       304   result=         4
+# a_in=       142   b_in=       358   result=         2
+# a_in=        98   b_in=       402   result=         2
+# a_in=       317   b_in=       183   result=         1
+# a_in=       401   b_in=        99   result=         1
+# a_in=       169   b_in=       331   result=         1
+# a_in=       134   b_in=       366   result=         2
+# a_in=       162   b_in=       338   result=         2
+# a_in=       458   b_in=        42   result=         2
+# a_in=        65   b_in=       435   result=         5
+# a_in=       122   b_in=       378   result=         2
+# a_in=       171   b_in=       329   result=         1
+# a_in=       319   b_in=       181   result=         1
+# a_in=       244   b_in=       256   result=         4
+# a_in=       249   b_in=       251   result=         1
+# a_in=       356   b_in=       144   result=         4
+# a_in=       219   b_in=       281   result=         1
+# a_in=       305   b_in=       195   result=         5
+# a_in=       374   b_in=       126   result=         2
+# a_in=       387   b_in=       113   result=         1
+# a_in=       167   b_in=       333   result=         1
+# a_in=        94   b_in=       406   result=         2
+# a_in=       413   b_in=        87   result=         1
+# a_in=       311   b_in=       189   result=         1
+# a_in=       133   b_in=       367   result=         1
+# a_in=       268   b_in=       232   result=         4
+# a_in=       498   b_in=         2   result=         2
+# a_in=       431   b_in=        69   result=         1
+# a_in=       196   b_in=       304   result=         4
+# a_in=       489   b_in=        11   result=         1
+# a_in=       105   b_in=       395   result=         5
+# a_in=        70   b_in=       430   result=        10
+# a_in=       285   b_in=       215   result=         5
+# a_in=       185   b_in=       315   result=         5
+# a_in=       466   b_in=        34   result=         2
+# a_in=       149   b_in=       351   result=         1
+# a_in=        36   b_in=       464   result=         4
+# a_in=        62   b_in=       438   result=         2
+# a_in=       276   b_in=       224   result=         4
+# a_in=       227   b_in=       273   result=         1
+# a_in=       164   b_in=       336   result=         4
+# a_in=       382   b_in=       118   result=         2
+# a_in=        48   b_in=       452   result=         4
+# a_in=        23   b_in=       477   result=         1
+# a_in=       328   b_in=       172   result=         4
+# a_in=        20   b_in=       480   result=        20
+# a_in=        24   b_in=       476   result=         4
+# a_in=       138   b_in=       362   result=         2
+# a_in=       229   b_in=       271   result=         1
+# a_in=       422   b_in=        78   result=         2
+# a_in=       137   b_in=       363   result=         1
+# a_in=       212   b_in=       288   result=         4
+# a_in=       315   b_in=       185   result=         5
+# a_in=       356   b_in=       144   result=         4
+# a_in=       343   b_in=       157   result=         1
+# a_in=       418   b_in=        82   result=         2
+# a_in=       382   b_in=       118   result=         2
+# a_in=        81   b_in=       419   result=         1
+# a_in=       466   b_in=        34   result=         2
+# a_in=       245   b_in=       255   result=         5
+# a_in=       213   b_in=       287   result=         1
+# a_in=       155   b_in=       345   result=         5
+# a_in=       128   b_in=       372   result=         4
+# a_in=       236   b_in=       264   result=         4
+# a_in=       241   b_in=       259   result=         1
+# a_in=       224   b_in=       276   result=         4
+# a_in=       220   b_in=       280   result=        20
+# a_in=       479   b_in=        21   result=         1
+# a_in=         9   b_in=       491   result=         1
+# a_in=       448   b_in=        52   result=         4
+# a_in=       262   b_in=       238   result=         2
+# a_in=       256   b_in=       244   result=         4
+# a_in=       212   b_in=       288   result=         4
+# a_in=       497   b_in=         3   result=         1
+# a_in=       282   b_in=       218   result=         2
+# a_in=       256   b_in=       244   result=         4
+# a_in=        16   b_in=       484   result=         4
+# a_in=       216   b_in=       284   result=         4
+# a_in=       392   b_in=       108   result=         4
+# a_in=       273   b_in=       227   result=         1
+# a_in=       125   b_in=       375   result=       125
+# a_in=       175   b_in=       325   result=        25
+# a_in=       259   b_in=       241   result=         1
+# a_in=        91   b_in=       409   result=         1
+# a_in=       171   b_in=       329   result=         1
+# a_in=       352   b_in=       148   result=         4
+# a_in=       195   b_in=       305   result=         5
+# a_in=       217   b_in=       283   result=         1
+# a_in=       455   b_in=        45   result=         5
+# a_in=       432   b_in=        68   result=         4
+# a_in=       288   b_in=       212   result=         4
+# a_in=       409   b_in=        91   result=         1
+# a_in=       371   b_in=       129   result=         1
+# a_in=       341   b_in=       159   result=         1
+# a_in=       411   b_in=        89   result=         1
+# a_in=       282   b_in=       218   result=         2
+# a_in=        14   b_in=       486   result=         2
+# a_in=       129   b_in=       371   result=         1
+# a_in=       496   b_in=         4   result=         4
+# a_in=       271   b_in=       229   result=         1
+# a_in=       260   b_in=       240   result=        20
+# a_in=       162   b_in=       338   result=         2
+# a_in=       352   b_in=       148   result=         4
+# a_in=       328   b_in=       172   result=         4
+# a_in=       257   b_in=       243   result=         1
+# a_in=       195   b_in=       305   result=         5
+# a_in=       367   b_in=       133   result=         1
+# a_in=       190   b_in=       310   result=        10
+# a_in=       385   b_in=       115   result=         5
+# a_in=       214   b_in=       286   result=         2
+# a_in=        50   b_in=       450   result=        50
+# a_in=       404   b_in=        96   result=         4
+# a_in=       206   b_in=       294   result=         2
+# a_in=       144   b_in=       356   result=         4
+# a_in=       102   b_in=       398   result=         2
+# a_in=       411   b_in=        89   result=         1
+# a_in=         9   b_in=       491   result=         1
+# a_in=        65   b_in=       435   result=         5
+# a_in=       149   b_in=       351   result=         1
+# a_in=       362   b_in=       138   result=         2
+# a_in=        19   b_in=       481   result=         1
+# a_in=       352   b_in=       148   result=         4
+# a_in=       210   b_in=       290   result=        10
+# a_in=       444   b_in=        56   result=         4
+# a_in=        60   b_in=       440   result=        20
+# a_in=       225   b_in=       275   result=        25
+# a_in=       239   b_in=       261   result=         1
+# a_in=       159   b_in=       341   result=         1
+# a_in=       406   b_in=        94   result=         2
+# a_in=       319   b_in=       181   result=         1
+# a_in=       284   b_in=       216   result=         4
+# a_in=       411   b_in=        89   result=         1
+# a_in=       388   b_in=       112   result=         4
+# a_in=       119   b_in=       381   result=         1
+# a_in=       382   b_in=       118   result=         2
+# a_in=       210   b_in=       290   result=        10
+# a_in=       268   b_in=       232   result=         4
+# a_in=        76   b_in=       424   result=         4
+# a_in=       135   b_in=       365   result=         5
+# a_in=        75   b_in=       425   result=        25
+# a_in=       423   b_in=        77   result=         1
+# a_in=       350   b_in=       150   result=        50
+# a_in=        19   b_in=       481   result=         1
+# a_in=       234   b_in=       266   result=         2
+# a_in=        45   b_in=       455   result=         5
+# a_in=       140   b_in=       360   result=        20
+# a_in=        10   b_in=       490   result=        10
+# a_in=       365   b_in=       135   result=         5
+# a_in=       257   b_in=       243   result=         1
+# a_in=       459   b_in=        41   result=         1
+# a_in=       440   b_in=        60   result=        20
+# a_in=       105   b_in=       395   result=         5
+# a_in=        28   b_in=       472   result=         4
+# a_in=        30   b_in=       470   result=        10
+# a_in=       406   b_in=        94   result=         2
+# a_in=        58   b_in=       442   result=         2
+# a_in=       425   b_in=        75   result=        25
+# a_in=       360   b_in=       140   result=        20
+# a_in=       283   b_in=       217   result=         1
+# a_in=       335   b_in=       165   result=         5
+# a_in=        71   b_in=       429   result=         1
+# a_in=       178   b_in=       322   result=         2
+# a_in=       309   b_in=       191   result=         1
+# a_in=       496   b_in=         4   result=         4
+# a_in=       154   b_in=       346   result=         2
+# a_in=       294   b_in=       206   result=         2
+# a_in=       389   b_in=       111   result=         1
+# a_in=       329   b_in=       171   result=         1
+# a_in=       116   b_in=       384   result=         4
+# a_in=       494   b_in=         6   result=         2
+# a_in=       175   b_in=       325   result=        25
+# a_in=       373   b_in=       127   result=         1
+# a_in=       323   b_in=       177   result=         1
+# a_in=       318   b_in=       182   result=         2
+# a_in=       419   b_in=        81   result=         1
+# a_in=       221   b_in=       279   result=         1
+# a_in=       255   b_in=       245   result=         5
+# a_in=       462   b_in=        38   result=         2
+# a_in=       372   b_in=       128   result=         4
+# a_in=       458   b_in=        42   result=         2
+# a_in=        75   b_in=       425   result=        25
+# a_in=       469   b_in=        31   result=         1
+# a_in=       217   b_in=       283   result=         1
+# a_in=       381   b_in=       119   result=         1
+# a_in=        25   b_in=       475   result=        25
+# a_in=       488   b_in=        12   result=         4
+# a_in=       309   b_in=       191   result=         1
+# a_in=       183   b_in=       317   result=         1
+# a_in=        70   b_in=       430   result=        10
+# a_in=        51   b_in=       449   result=         1
+# a_in=       379   b_in=       121   result=         1
+# a_in=       312   b_in=       188   result=         4
+# a_in=       419   b_in=        81   result=         1
+# a_in=       400   b_in=       100   result=       100
+# a_in=       260   b_in=       240   result=        20
+# a_in=       130   b_in=       370   result=        10
+# a_in=       165   b_in=       335   result=         5
+# a_in=       224   b_in=       276   result=         4
+# a_in=       158   b_in=       342   result=         2
+# a_in=       349   b_in=       151   result=         1
+# a_in=        79   b_in=       421   result=         1
+# a_in=       304   b_in=       196   result=         4
+# a_in=       195   b_in=       305   result=         5
+# a_in=       354   b_in=       146   result=         2
+# a_in=        75   b_in=       425   result=        25
+# a_in=        50   b_in=       450   result=        50
+# a_in=       401   b_in=        99   result=         1
+# a_in=       429   b_in=        71   result=         1
+# a_in=       322   b_in=       178   result=         2
+# a_in=       232   b_in=       268   result=         4
+# a_in=        60   b_in=       440   result=        20
+# a_in=       181   b_in=       319   result=         1
+# a_in=       492   b_in=         8   result=         4
+# a_in=       240   b_in=       260   result=        20
+# a_in=       162   b_in=       338   result=         2
+# a_in=       373   b_in=       127   result=         1
+# a_in=       154   b_in=       346   result=         2
+# a_in=        20   b_in=       480   result=        20
+# a_in=       268   b_in=       232   result=         4
+# a_in=       171   b_in=       329   result=         1
+# a_in=        59   b_in=       441   result=         1
+# a_in=       107   b_in=       393   result=         1
+# a_in=       369   b_in=       131   result=         1
+# a_in=       327   b_in=       173   result=         1
+# a_in=       415   b_in=        85   result=         5
+# a_in=       432   b_in=        68   result=         4
+# a_in=       206   b_in=       294   result=         2
+# a_in=       234   b_in=       266   result=         2
+# a_in=       342   b_in=       158   result=         2
+# a_in=        76   b_in=       424   result=         4
+# a_in=       206   b_in=       294   result=         2
+# a_in=        82   b_in=       418   result=         2
+# a_in=       329   b_in=       171   result=         1
+# a_in=       429   b_in=        71   result=         1
+# a_in=       123   b_in=       377   result=         1
+# a_in=       207   b_in=       293   result=         1
+# a_in=       413   b_in=        87   result=         1
+# a_in=        84   b_in=       416   result=         4
+# a_in=        19   b_in=       481   result=         1
+# a_in=       408   b_in=        92   result=         4
+# a_in=        21   b_in=       479   result=         1
+# a_in=       104   b_in=       396   result=         4
+# a_in=       204   b_in=       296   result=         4
+# a_in=       316   b_in=       184   result=         4
+# a_in=       471   b_in=        29   result=         1
+# a_in=       108   b_in=       392   result=         4
+# a_in=        97   b_in=       403   result=         1
+# a_in=       190   b_in=       310   result=        10
+# a_in=       421   b_in=        79   result=         1
+# a_in=       204   b_in=       296   result=         4
+# a_in=       161   b_in=       339   result=         1
+# a_in=       263   b_in=       237   result=         1
+# a_in=       257   b_in=       243   result=         1
+# a_in=         6   b_in=       494   result=         2
+# a_in=        67   b_in=       433   result=         1
+# a_in=       268   b_in=       232   result=         4
+# a_in=       133   b_in=       367   result=         1
+# a_in=       389   b_in=       111   result=         1
+# a_in=       208   b_in=       292   result=         4
+# a_in=       125   b_in=       375   result=       125
+# a_in=       412   b_in=        88   result=         4
+# a_in=       110   b_in=       390   result=        10
+# a_in=       254   b_in=       246   result=         2
+# a_in=       348   b_in=       152   result=         4
+# a_in=       233   b_in=       267   result=         1
+# a_in=       311   b_in=       189   result=         1
+# a_in=       156   b_in=       344   result=         4
+# a_in=       144   b_in=       356   result=         4
+# a_in=       397   b_in=       103   result=         1
+# a_in=       446   b_in=        54   result=         2
+# a_in=       260   b_in=       240   result=        20
+# a_in=       487   b_in=        13   result=         1
+# a_in=       157   b_in=       343   result=         1
+# a_in=       251   b_in=       249   result=         1
+# a_in=       202   b_in=       298   result=         2
+# a_in=       477   b_in=        23   result=         1
+# a_in=       493   b_in=         7   result=         1
+# a_in=       440   b_in=        60   result=        20
+# a_in=       362   b_in=       138   result=         2
+# a_in=       455   b_in=        45   result=         5
+# a_in=       455   b_in=        45   result=         5
+# a_in=       165   b_in=       335   result=         5
+# a_in=        55   b_in=       445   result=         5
+# a_in=       126   b_in=       374   result=         2
+# a_in=       179   b_in=       321   result=         1
+# a_in=        80   b_in=       420   result=        20
+# a_in=        46   b_in=       454   result=         2
+# a_in=       415   b_in=        85   result=         5
+# a_in=       231   b_in=       269   result=         1
+# a_in=       431   b_in=        69   result=         1
+# a_in=        30   b_in=       470   result=        10
+# a_in=       375   b_in=       125   result=       125
+# a_in=        90   b_in=       410   result=        10
+# a_in=       480   b_in=        20   result=        20
+# a_in=       456   b_in=        44   result=         4
+# a_in=       138   b_in=       362   result=         2
+# a_in=        84   b_in=       416   result=         4
+# a_in=       446   b_in=        54   result=         2
+# a_in=       402   b_in=        98   result=         2
+# a_in=       491   b_in=         9   result=         1
+# a_in=        86   b_in=       414   result=         2
+# a_in=       322   b_in=       178   result=         2
+# a_in=       138   b_in=       362   result=         2
+# a_in=       237   b_in=       263   result=         1
+# a_in=        46   b_in=       454   result=         2
+# a_in=       424   b_in=        76   result=         4
+# a_in=       349   b_in=       151   result=         1
+# a_in=       101   b_in=       399   result=         1
+# a_in=       328   b_in=       172   result=         4
+# a_in=       265   b_in=       235   result=         5
+# a_in=       255   b_in=       245   result=         5
+# a_in=       348   b_in=       152   result=         4
+# a_in=       318   b_in=       182   result=         2
+# a_in=       222   b_in=       278   result=         2
+# a_in=       195   b_in=       305   result=         5
+# a_in=       420   b_in=        80   result=        20
+# --------------------------------------------------
+# Executing Part3 ... 
+# --------------------------------------------------
+# SUCCESS: OPEN FILE -> post_input_data
+# SUCCESS: OPEN FILE -> comparison.rpt
+# a_in=      3430   b_in=      2060   match
+# a_in=      3435   b_in=   2342340   match
+# a_in=     13435   b_in=   3434290   match
+# a_in=  23232502   b_in= 343535354   match
+# a_in=      5975   b_in=   3859034   match
+# a_in=      1930   b_in=        34   match
+# a_in=        39   b_in=        13   match
+# a_in=         9   b_in=         3   match
+# a_in=        14   b_in=        92   match
+# a_in=       210   b_in=       124   match
+# a_in=    116150   b_in=    232704   match
+# a_in=         6   b_in=         6   match
+# a_in=         0   b_in=         0   match
+# a_in=         1   b_in=         1   match
+# a_in=      5000   b_in=      5000   match
+# --------------------------------------------------
+# Executing Part5 ... 
+# --------------------------------------------------
+# SUCCESS: OPEN FILE -> post_input_data
+# a_in=      3430   b_in=      2060   result=        10
+# a_in=      3435   b_in=   2342340   result=        15
+# a_in=     13435   b_in=   3434290   result=         5
+# a_in=  23232502   b_in= 343535354   result=         2
+# a_in=      5975   b_in=   3859034   result=         1
+# a_in=      1930   b_in=        34   result=         2
+# a_in=        39   b_in=        13   result=        13
+# a_in=         9   b_in=         3   result=         3
+# a_in=        14   b_in=        92   result=         2
+# a_in=       210   b_in=       124   result=         2
+# a_in=    116150   b_in=    232704   result=       202
+# a_in=         6   b_in=         6   result=         6
+# a_in=         0   b_in=         0   result=         0
+# a_in=         1   b_in=         1   result=         1
+# a_in=      5000   b_in=      5000   result=      5000
+# ** Note: $stop    : src/tb.sv(286)
+#    Time: 4490300 ns  Iteration: 0  Instance: /tb
+# Break at src/tb.sv line 286
+# Stopped at src/tb.sv line 286
+# End time: 04:46:55 on May 25,2022, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 4

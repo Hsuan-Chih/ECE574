@@ -1,0 +1,11 @@
+a_in=      3430   b_in=      2060   result=        10
+a_in=      3435   b_in=   2342340   result=        15
+a_in=     13435   b_in=   3434290   result=         5
+a_in=  23232502   b_in= 343535354   result=         2
+a_in=      5975   b_in=   3859034   result=         1
+a_in=      1930   b_in=        34   result=         2
+a_in=        39   b_in=        13   result=        13
+a_in=         9   b_in=         3   result=         3
+a_in=        14   b_in=        92   result=         2
+a_in=       210   b_in=       124   result=         2
+a_in=    116150   b_in=    232704   result=       202

@@ -1,0 +1,52 @@
+======================================================================================================================
+Part1.3
+(1) FSM Coverage is not 100%. All states have been visited; however, there are "2" uncovered FSM transitions, which is
+SUBT -> DONE, and SWAP -> DONE. In the normal situation, these two transitions will never appear. 
+Because FSM states that the next state of SUBT or SWAP will never be the DONE state.
+Instead, the next state of SUBT is "TEST" and the next state of SWAP is "SUBT". 
+Therefore, it's a correct behavior that the report does not cover these two transitions.
+
+However, only one situation can satisfy these two transitions. 
+That is, the reset_n signal is deasserted when the present state is SUBT or SWAP.
+In this situation, the next state will be back to DONE. 
+Unfortunately, it's not possible to represent in this homework because we are only allowed to modify the input_date but not testbench!!
+
+All in all, the reason why is not able to reach 100% FSM coverage is due to the "unexpected behavior" rather than the design error.
+
+(2) Condition Coverage is not found in the design files, which is also the normal condition.
+Because the design files do not contain any condition, e.g., "==".
+All the conditions are existed in testbench, but they are not required to be covered because of they are not design files.
+Therefore, I use the "exclude" command in the .do file.
+=========================================================================================================================================
+Part5
+Reason of low coverage for the cross-point in the first covergroup is the following cross-point is not our expected behavior.
+bin <subt,done>                                              
+bin <swap,done>                                          
+bin <done,subt>                                                
+bin <subt,subt>                                              
+bin <done,swap>                                               
+bin <subt,swap>                                               
+bin <swap,swap>                                                
+bin <swap,test>                                            
+bin <test,test>                                       
+All in all, the above bins do not cover; therefore, it causes the low coverage for the cross-point in the first covergroup.
+=========================================================================================================================================
+Part6
+For the modification of the first covergroup, I list these bins to be illegal bins:
+bin <done,subt>                                                
+bin <subt,subt>                                              
+bin <done,swap>                                               
+bin <subt,swap>                                               
+bin <swap,swap>                                                
+bin <swap,test>                                            
+bin <test,test>
+Because these transitions are all not supposed to happen. If they happens, it must be an illegal situation as we can clearly see from the FSM.
+
+As for bin <subt,done>, bin <swap,done>, I set them as ignore bins. 
+Because in the specific situation, such as if reset_n deassert, these transition are valid.
+The details have been mentioned in Part1.3(2).
+
+For the modification of the second covergroup, 
+because the result never covers 5000 in the previous simulation, I add a_in & b_in =  5000 as one of the inputs in the post_input_data file.
+Through this, the result now will cover 5000. 
+Finally, all bins in the second covergroup will be covered, and the final functional coverage report is now 100%.
